@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Arial Rounded MT';
-    src: url('Arial fonts/ARIALROUNDEDMT.TTF') format('truetype');
-}
-
-@font-face {
-    font-family: 'Arial Rounded MT Bold';
-    src: url('Arial fonts/ARIALROUNDEDMTEXTRABOLD.TTF') format('truetype');
-}
-
 body {
     font-family: 'Arial Rounded MT Bold', sans-serif;
     margin: 0px;
