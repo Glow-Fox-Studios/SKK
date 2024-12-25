@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKK Hivatalos Weboldal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            position: relative;
+        }
+        .menu a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 4px;
+            background: #007bff;
+            transition: width .3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            border-radius: 5px;
+        }
+        .menu a:hover::after,
+        .menu a:focus::after {
+            width: 100%;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .news-ticker {
+            background-color: #f1f1f1;
+            padding: 10px;
+            overflow: hidden;
+            position: relative;
+            height: 50px;
+        }
+        .news-ticker div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        .news-ticker div.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SKK</div>
+        <nav class="menu">
+            <a href="#jaratok">Járatok</a>
+            <a href="#menetrend">Menetrend</a>
+            <a href="#kapcsolat">Kapcsolat</a>
+        </nav>
+        <div class="logo">
+            <img src="skk_logo.png" alt="SKK Logó">
+        </div>
+    </header>
+    <div class="news-ticker">
+        <div id="news1" class="active">Ez az első cikk.</div>
+        <div id="news2">Ez a második cikk.</div>
+        <div id="news3">Ez a harmadik cikk.</div>
+    </div>
+    <script>
+        let currentNews = 1;
+        setInterval(() => {
+            document.getElementById(`news${currentNews}`).classList.remove('active');
+            currentNews = currentNews === 3 ? 1 : currentNews + 1;
+            document.getElementById(`news${currentNews}`).classList.add('active');
+        }, 5000);
+    </script>
+</body>
+</html>
+    
