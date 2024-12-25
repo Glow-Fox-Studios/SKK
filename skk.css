@@ -76,11 +76,12 @@ body {
 
 .cikk_szöveg h2 {
     margin: 0 0 10px 0;
+    font-family: 'Arial Rounded MT';
 }
 
 .cikk_szöveg p {
     margin: 0;
-    font-family: 'Arial Rounded MT Bold';
+    font-family: 'Arial Rounded MT';
     max-width: 500px;
 }
 
@@ -114,11 +115,12 @@ h1 {
 
 .cikk_szöveg2 h2 {
     margin: 0 0 10px 0;
+    font-family: 'Arial Rounded MT';
 }
 
 .cikk_szöveg2 p {
     margin: 0;
-    font-family: 'Arial Rounded MT Bold';
+    font-family: 'Arial Rounded MT';
     max-width: 500px;
 }
 
@@ -147,9 +149,11 @@ h1 {
 
 .cikk_szöveg3 h2 {
     margin: 0 0 10px 0;
+    font-family: 'Arial Rounded MT';
 }
 
 .cikk_szöveg3 p {
     margin: 0;
     max-width: 500px;
+    font-family: 'Arial Rounded MT';
 }
