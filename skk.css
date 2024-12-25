@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-family: 'Arial Rounded MT Bold';
     margin: 0px;
     padding: 0;
 }
@@ -79,7 +79,7 @@ body {
 
 .cikk_szöveg p {
     margin: 0;
-    font-family: 'Arial Rounded MT';
+    font-family: 'Arial Rounded MT Bold';
     max-width: 500px;
 }
 
@@ -115,7 +115,7 @@ h1 {
 
 .cikk_szöveg2 p {
     margin: 0;
-    font-family: 'Arial Rounded MT';
+    font-family: 'Arial Rounded MT Bold';
     max-width: 500px;
 }
 
@@ -147,6 +147,6 @@ h1 {
 
 .cikk_szöveg3 p {
     margin: 0;
-    font-family: 'Arial Rounded MT';
+    font-family: 'Arial Rounded MT Bold';
     max-width: 500px;
 }
